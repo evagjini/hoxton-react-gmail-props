@@ -27,7 +27,7 @@ function Emails({ getFilteredEmails, toggleRead, toggleStar }: Props) {
             <ul>
                 {getFilteredEmails().map((email, index) => (
                     <SingleEmail
-
+                        key={index}
                         index={index}
                         email={email}
                         toggleRead={toggleRead}
